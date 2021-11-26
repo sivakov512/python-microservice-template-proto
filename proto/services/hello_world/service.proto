@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package proto.services.helloworld;
+
+import "proto/common/greetings.proto";
+
+service HelloWorld {
+  rpc SayHello (common.Greeting) returns (common.Greeting);
+}
